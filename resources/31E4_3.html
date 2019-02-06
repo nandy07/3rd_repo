@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finding HTML Elements by Tag Name - 1</title>
+</head>
+<body>
+<h1>Finding HTML Elements by Tag Name</h1>
+<h3>This example finds the element with id="main", and then finds all <p> elements inside "main":</h3>
+
+<div id="main">
+	<p> 1st paragraph</p>
+	<p> 2nd paragraph </p>
+</div>
+<p id="demo"></p>
+
+<button type = "button" onclick ="f1()"> click</button>
+
+<script type="text/javascript">
+	function f1(){
+		var x = document.getElementById("main");
+		var y = x.getElementsByTagName('p');
+
+		document.getElementById("demo").innerHTML = "The content of the 2nd paragraph under the div main is  : " + y[1].innerHTML;
+	}
+</script>
+</body>
+</html>

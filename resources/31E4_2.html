@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finding HTML Elements by Tag Name</title>
+</head>
+<body>
+
+<p> 1st paragraph </p>
+<p> 2nd Paragraph </p>
+<p id ="demo"> 3rd Paragraph </p>
+
+<button type="button" onclick="f1()"> Click</button>
+
+<script type="text/javascript">
+	function f1(){
+		var x = document.getElementsByTagName('p');
+
+		document.getElementById("demo").innerHTML = "The content of the 1st paragraph is : " + x[0].innerHTML;
+	}
+</script>
+</body>
+</html>
